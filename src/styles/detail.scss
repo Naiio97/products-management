@@ -1,0 +1,36 @@
+main {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.detail-container {
+  display: flex;
+  align-items: flex-start;
+
+  h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .info {
+    width: 700px;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .image {
+    width: 500px;
+
+    img {
+      height: 500px;
+      width: 500px;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+header {
+  background: #323232;
+  height: 50px;
+
+  .bar {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: flex-end;
+    padding-top: 7px;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .responsive-menu {
+      display: block;
+      background-color: #323232;
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  .log {
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+    background: #323232;
+    cursor: pointer;
+    color: #f5f5f774;
+    border: none;
+    text-decoration: none;
+
+    @media (max-width: 600px) {
+      display: block;
+    }
+
+    &:hover {
+      color: #f5f5f7;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: #3e96da;
+      transition: width 0.3s;
+    }
+
+    &:hover::after {
+      width: 20px;
+    }
+  }
+
+  .btn-nav {
+    display: block;
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+    background: #323232;
+    cursor: pointer;
+    color: #f5f5f774;
+    border: none;
+    text-decoration: none;
+
+    &:hover {
+      color: #f5f5f7;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: #3e96da;
+      transition: width 0.3s;
+    }
+
+    &:hover::after {
+      width: 20px;
+    }
+  }
+
+  .hamburger {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #eee;
+    border: none;
+    background-color: #323232;
+    z-index: 100;
+    cursor: pointer;
+
+    svg {
+      width: 2em;
+      height: 2em;
+    }
+
+    @media (max-width: 600px) {
+      display: block;
+    }
+  }
+}
